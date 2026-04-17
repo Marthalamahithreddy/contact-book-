@@ -35,7 +35,7 @@ python3 --version
 
 ```bash
 git clone https://github.com/Marthalamahithreddy/contact-book-.git
-cd contact-book
+cd contact-book-
 ```
 
 **2. Create a virtual environment**
