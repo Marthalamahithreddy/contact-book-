@@ -34,7 +34,7 @@ python3 --version
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/MarthalaSaiKavya/contact-book.git
+git clone https://github.com/Marthalamahithreddy/contact-book-.git
 cd contact-book
 ```
 
