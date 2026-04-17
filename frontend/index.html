@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <span class="logo">&#9993; Contacts</span>
+    <button class="btn-icon" id="btn-new" title="New contact">&#43;</button>
+  </div>
+  <div class="search-wrap">
+    <input id="search-input" type="text" placeholder="Search name, phone, email…" autocomplete="off" />
+    <span class="search-icon">&#128269;</span>
+  </div>
+  <ul class="contact-list" id="contact-list">
+    <li class="empty-state">Loading…</li>
+  </ul>
+</aside>
+
+<main class="main" id="main-panel">
+  <div class="placeholder">
+    <div class="placeholder-icon">&#128100;</div>
+    <p>Select a contact or create a new one</p>
+  </div>
+</main>
+
+<div class="modal-overlay hidden" id="merge-overlay">
+  <div class="modal">
+    <h3>Merge with…</h3>
+    <p class="modal-sub">Select the contact to merge into <strong id="merge-primary-name"></strong>.<br/>
+      All phone numbers will be combined. The primary contact is kept.</p>
+    <input id="merge-search" type="text" placeholder="Search contact…" autocomplete="off" />
+    <ul class="modal-list" id="merge-list"></ul>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="merge-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay hidden" id="delete-overlay">
+  <div class="modal modal-sm">
+    <h3>Delete contact?</h3>
+    <p class="modal-sub" id="delete-msg"></p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="delete-cancel">Cancel</button>
+      <button class="btn btn-danger" id="delete-confirm">Delete</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
